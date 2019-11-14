@@ -3,15 +3,18 @@
 	box-sizing: border-box;
 }
 
-header {
-	padding-top: 43px;
-	padding-bottom: 95px;
-	position: relative;
+.container {
+	width: 980px;
 }
 
-.header__logo span {
-	
-	/*  position: relative;*/
+/* Ищу мешающие блоки для мобильного предпросмотра */
+/*section, div, h1, h2, h3, h4 {
+	outline: 1px solid red;
+}*/
+.header {
+	padding-top: 43px;
+	padding-bottom: 10px;
+	position: relative;
 }
 .header__logo-img {
 	margin-right: 6px;
@@ -32,6 +35,13 @@ header {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+.header__logo-name:hover {
+	text-decoration: none;
+}
+
+a.header__logo:hover {
+	text-decoration: none;
 }
 .navigation {
 	position: absolute;
@@ -65,15 +75,15 @@ header {
 	background-size: cover;
 	box-shadow: 0 0 0 265px rgba(0, 0, 0, 0.75) inset;
 }
-.m-b {
-	margin-bottom: 24px;
+.m-b-35 {
+	margin-bottom: 35px;
 }
 .header__content {
 	position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-	width: 1170px;
+    width: 980px;
 	color: #fff;
 	text-align: center;
 }
@@ -87,7 +97,6 @@ header {
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 40px;
-	/* text-align: center; */
 }
 .header__subtitle {
 	font-size: 20px;
@@ -97,17 +106,13 @@ header {
 	font-weight: 400;
 	margin-bottom: 50px;
 }
-header .button {
+.btn {
 	padding-top: 7px;
 	display: block;
 	width: 200px;
 	height: 60px;
 	border-radius: 30px;
 	background-color: #7cc576;
-    position: absolute;
-    left: 50%;
-    top: 235px;
-    transform: translateX(-50%);
     font-size: 15px;
 	line-height: 43px;
 	color: #fff;
@@ -116,13 +121,19 @@ header .button {
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	/* box-shadow: 0px 1px 0.5px rgba(0,0,0,0.7);*/
 }
-header .button:hover,
-header .button:focus,
-header .button:active {
+.btn-header {
+	position: absolute;
+    left: 50%;
+    top: 235px;
+    transform: translateX(-50%);
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
 	background-color: #ffffff;
-	color: #222222;
+	color: #7cc576;
+	border-radius: 30px;
 }
 .main__title {
 	font-size: 40px;
@@ -143,10 +154,11 @@ header .button:active {
 	text-align: center;
 }
 .main .titles {
+	margin-top: 93px;
 	margin-bottom: 85px;
 }
 .myContainer {
-	width: 1170px;
+	width: 980px;
 	margin-left: auto;
 	margin-right: auto;
 	/* background: grey; */
@@ -231,25 +243,30 @@ header .button:active {
 .circle img {
 	padding-left: 4px;
 }
+.fa-check-circle-o {
+	color: #ccc;
+}
 .check__list,
 .check__item {
 	margin: 0;
 	padding: 0;
 }
-.check__list {
+ul.check__list {
 	margin-bottom: 50px;
+	list-style-image: url("../img/check.jpg");
 }
 .check__item {
 	position: relative;
 	margin-bottom: 10px;
+	margin-left: 45px;
 }
 .check__item:last-child {
 	margin-bottom: 0;
 }
 .check__text {
 	display: block;
-	top: 3px;
-    left: 41px;
+	top: 6px;
+    /*left: 41px;*/
 	font-size: 16px;
 	color: #ccc;
 	font-family: "Roboto Slab", sans-serif;
@@ -257,7 +274,7 @@ header .button:active {
 	z-index: 5;
 	position: absolute;
 }
-.relax a {
+.relax .btn {
 	display: block;
 	padding-top: 7px;
 	width: 168px;
@@ -271,6 +288,11 @@ header .button:active {
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
+}
+.relax .btn:hover {
+	text-decoration: none;
+	color: #7cc576;
+	background: #fff;
 }
 .latest__project {
 	margin-top: 100px;
@@ -456,7 +478,22 @@ header .button:active {
 	font-weight: 400;
 	text-align: center;
 }
-
+.clients__say-text {
+	font-size: 22px;
+	line-height: 28px;
+	color: #777777;
+	font-family: "Roboto Slab", sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+.clients__say-author {
+	font-size: 18px;
+	line-height: 36px;
+	color: #7cc576;
+	font-family: "Roboto Slab", sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
 .culture__text h3 {
 	margin-bottom: 30px;
 	color: #222222;
@@ -478,18 +515,27 @@ header .button:active {
 .clients__say {
 	margin-bottom: 95px;
 }
+.m-b-105 {
+	margin-bottom: 105px;
+}
+.clients__say-img {
+	display: flex;
+	justify-content: center;
+}
 .clients__say-text {
-	width: 642px;
+	/*width: 642px;*/
 	height: 173px;
 	background-color: #f9f9f9;
 	outline: 1px solid red;
 	position: relative;
 }
+
 .triangle1 {
     width: 23px; 
 	height: 23px;
 	transform: rotate(45deg);
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
+    background: #f9f9f9;
     position: absolute;
     top: 46px;
     left: 1px;
@@ -498,10 +544,12 @@ header .button:active {
     width: 23px; 
 	height: 23px;
 	transform: rotate(45deg);
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
+    background: #f9f9f9;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 74px;
+    left: 464px;
+    z-index: -1;
 }
 .ready {
 	padding-top: 65px;
@@ -553,8 +601,12 @@ header .button:active {
 	background: #fff;
 	padding-bottom: 55px;
 	padding-top: 55px;
+	
+}
+.brands__around {
+	margin-top: 60px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 .brands img {
@@ -637,13 +689,18 @@ header .button:active {
 .posts__news-text {
 	display: inline-block;
 	margin-left: 15px;
+	color: #ececec;
 	text-transform: capitalize;
+}
+.posts__news-text:hover {
+	color: #7cc576;
+	text-decoration: none;
 }
 .latest__tweets-item {
 	margin-bottom: 10px;
 	display: flex;
-	-webkit-justify-content: space-between;
-	        justify-content: space-between;
+	-webkit-justify-content: flex-start;/* space-between */
+	        justify-content: flex-start;
 	    -webkit-align-items: flex-start;
 	            align-items: flex-start;
 }
@@ -657,6 +714,10 @@ header .button:active {
 	font-family: "Roboto Slab", sans-serif;
 	font-weight: 400;
 }
+.latest__tweets-text:hover {
+	color: #7cc576;
+	text-decoration: none;
+}
 .latest__tweets-author {
 	font-size: 16px;
 	font-family: "Roboto Slab", sans-serif;
@@ -668,11 +729,15 @@ header .button:active {
 	font-weight: 400;
 }
 .footer-bottom {
+	position: relative;
 	background: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
 .footer-bottom span {
+	position: absolute;
+	top: 32px;
+	left: 20px;
 	font-size: 14px;
 	line-height: 22px;
 	color: #555555;
@@ -696,4 +761,26 @@ header .button:active {
 .social__icons-item img {
 	padding-top: 9px;
 	padding-left: 12px;
+}
+.gear,
+.last__developing {
+	display: none;
+}
+@media (min-width: 768px) {
+	.gear {
+		display: block;
+	}
+}
+.circle1:after,
+.circle2:after {
+	display: none;
+}
+@media (min-width: 1200px) {
+	.last__developing {
+		display: block;
+	}
+	.circle1:after,
+	.circle2:after {
+		display: block;
+	}
 }
