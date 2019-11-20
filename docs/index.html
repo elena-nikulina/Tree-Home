@@ -12,12 +12,12 @@
 <body>
 <header class="header">
   <div class="container">
-  	<div class="row m-b-35">
+  	<div class="row">
   		<div class="col-md-3">
   			<a href="#" class="header__logo">
-          <div class="header__logo-img clearfix">
+          <span class="header__logo-img clearfix">
             <img src="img/leaf.png" alt="logo">
-          </div><div class="header__logo-name">Treehouse</div>
+          </span><span class="header__logo-name">Treehouse</span>
   			</a>
 
   		</div>
@@ -35,12 +35,12 @@
   </div>
 </header> 
 <main class="main">
-<section class="after__header">
-  <div class="header__center-img">
-    <div class="header__content">
-      <h1 class="header__title">creative digital<br> solution</h1>
-      <h3 class="header__subtitle">Proim iaculis consequat sem cure.</h3>
-      <a class="btn btn-header" href="#">view portfolio</a>
+<section class="promo">
+  <div class="promo__center-img">
+    <div class="promo__content">
+      <h1 class="promo__title">creative digital<br> solution</h1>
+      <h3 class="promo__subtitle">Proim iaculis consequat sem cure.</h3>
+      <a class="btn btn-promo" href="#">view portfolio</a>
     </div>  
   </div>
 </section>
@@ -54,22 +54,22 @@
         <div class="row">
           <div class="col-md-4">
             <article>
-               <img src="img/servicies-icon/icon-heart.svg" alt="icon-heart">
-               <h3>beautiful designs</h3>
+               <img class="services__img" src="img/servicies-icon/icon-heart.svg" alt="icon-heart">
+               <h3 class="services__title">beautiful designs</h3>
                <p>Proim iaculis consequat sem cure<br> dign ssim. Donec porttitora entum suscpit<br> aenean rhoncus posuere odio in tincidunt</p>
             </article>
           </div>
           <div class="col-md-4">
             <article>
-              <img src="img/servicies-icon/icon-mobile.svg" alt="icon-mobile">
-              <h3>responsive web</h3>
+              <img class="services__img" src="img/servicies-icon/icon-mobile.svg" alt="icon-mobile">
+              <h3 class="services__title">responsive web</h3>
                <p>Proim iaculis consequat sem cure<br> dign ssim. Donec porttitora entum suscpit<br> aenean rhoncus posuere odio in tincidunt</p>
             </article>
           </div>
           <div class="col-md-4">
             <article>
-              <img src="img/servicies-icon/icon-graph.svg" alt="icon-graph">
-              <h3>beautiful designs</h3>
+              <img class="services__img" src="img/servicies-icon/icon-graph.svg" alt="icon-graph">
+              <h3 class="services__title">beautiful designs</h3>
                <p>Proim iaculis consequat sem cure<br> dign ssim. Donec porttitora entum suscpit<br> aenean rhoncus posuere odio in tincidunt</p>
             </article>
           </div>
@@ -124,12 +124,12 @@
   </section>
   <section class="last__developing">
 	<div class="latest__project">
-    <h2>latest project</h2>
-    <h3>Proin iaculis purus consequat sem cure</h3>
+    <h2 class="latest__project--title">latest project</h2>
+    <h3 class="latest__project--subtitle">Proin iaculis purus consequat sem cure</h3>
   </div>
     <div class="container">
-      <h3>developing a framework</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Rerum asperiores, libero reprehenderit cum nesciunt<br> quo officiis beatae natus.</p>
+      <h3 class="latest__project--mytitle">developing a framework</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum<br> asperiores, libero reprehenderit cum nesciunt quo officiis beatae natus.</p>
     <ul class="latest__pro"> 
       <li class="latest__link">
         <div class="latest__item">
@@ -151,7 +151,7 @@
       </li>
       <li class="latest__link">
         <div class="latest__item">
-        <img src="img/latest_icon/icon-locked.svg" alt="locked">
+        <img class="latest-locked" src="img/latest_icon/icon-locked.svg" alt="locked">
       </div>
         <div class="latest__text">
           <h4>Secure Encryption</h4>
@@ -219,15 +219,15 @@ aenean rhoncus posuere odio in tincidunt.</p>
       <div class="row m-b-105">
         <div class="col-xs-12 col-sm-6">
           <div class="clients__say-img">
-            <img src="img/girl1.jpg" alt="girl">
+            <img class="clients__say-face" src="img/girl1.jpg" alt="girl">
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <div class="triangle1"></div>
-          <div class="clients__say-text">
+          
+          <div class="clients__say-text clients-one">
             “ Proin iaculis purus consequat sem cure  digni ssim 
               donec porttitora entum suscipit aenean rhoncus. ”<br>
-              <span class="clients__say-author">- Jamie Richardson, Founder of Cocoa Media</span> 
+              <span class="clients__say-author text-center">- Jamie Richardson, Founder of Cocoa Media</span> 
           </div>
         </div>
 
@@ -235,18 +235,18 @@ aenean rhoncus posuere odio in tincidunt.</p>
     </div><!--container-->
     <div class="container">
       <div class="row">
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 order-last order-sm-first col-sm-6">
 
-          <div class="clients__say-text">
+          <div class="clients__say-text clients-two">
             “ Proin iaculis purus consequat sem cure  digni ssim 
               donec porttitora entum suscipit aenean rhoncus. ”<br>
               <span class="clients__say-author">- Kim Thompson, Founder of Rainel</span> 
           </div>
-          <div class="triangle2"></div>
+         
         </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-xs-12 order-first order-sm-last col-sm-6">
         <div class="clients__say-img">
-            <img src="img/girl2.jpg" alt="girl">
+            <img class="clients__say-face" src="img/girl2.jpg" alt="girl">
           </div>
       
                  
@@ -254,14 +254,16 @@ aenean rhoncus posuere odio in tincidunt.</p>
       </div><!--row-->
     </div><!--container-->
   </section>
-  <section class="brands">
+  <section class="cta">
     <!--<div class="container">-->
   <div class="ready">
     <div class="container">
-    <h2>ready to talk about your next project?</h2>
+    <h2 class="ready__title">ready to talk about your next project?</h2>
     </div>
-    <div class="button">contact us</div>
+    <div class="button__contacts">contact us</div>
   </div>
+  </section>
+   <section class="brands">
   <div class="container">
   <div class="brands__around">
     <img src="img/brands/envato.png" alt="brand">
@@ -369,23 +371,31 @@ aenean rhoncus posuere odio in tincidunt.</p>
     </div>
   </div><!--//footer-top-->
   <div class="footer-bottom">
-    <span>
-      &copy; Copyright 2014 FreeXpress.com
-    </span>
-    <div class="social__icons">
-      <div class="social__icons-item">
-        <img src="img/bottomfooter-icon/twitter.png" alt="twitter">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-5">
+      <span>
+        &copy; Copyright 2014 FreeXpress.com
+      </span>
       </div>
-      <div class="social__icons-item">
-        <img src="img/bottomfooter-icon/facebook.png" alt="facebook">
+      <div class="col-md-7">
+      <div class="social__icons">
+        <div class="social__icons-item">
+          <img src="img/bottomfooter-icon/twitter.png" alt="twitter">
+        </div>
+        <div class="social__icons-item">
+          <img src="img/bottomfooter-icon/facebook.png" alt="facebook">
+        </div>
+        <div class="social__icons-item">
+          <img src="img/bottomfooter-icon/pinterest.png" alt="pinterest">
+        </div>
+        <div class="social__icons-item">
+          <img src="img/bottomfooter-icon/google-plus.png" alt="google-plus">
+        </div>
       </div>
-      <div class="social__icons-item">
-        <img src="img/bottomfooter-icon/pinterest.png" alt="pinterest">
-      </div>
-      <div class="social__icons-item">
-        <img src="img/bottomfooter-icon/google-plus.png" alt="google-plus">
       </div>
     </div>
+  </div>
   </div>
 </footer>
   <!-- Optional JavaScript -->
