@@ -317,8 +317,7 @@ ul.check__list {
 	text-align: center;
 }
 .last__developing {
-	background: url("../img/ipad.jpg") no-repeat;
-	background-position: center right;
+	background-image: none;
 	padding-bottom: 95px;
 }
 .last__developing .latest__project--mytitle {
@@ -763,8 +762,8 @@ ul.check__list {
 .social__icons-item img:hover {
 	background: lightgreen;
 }
-.gear,
-.last__developing {
+.gear
+/*.last__developing */{
 	display: none;
 }
 @media (min-width: 768px) {
@@ -897,4 +896,67 @@ img[alt="brand"]:last-child {
 	.footer-top {
 	padding-left: 0;
 }
+}
+@media (min-width: 1200px) {
+	.last__developing {
+	background-image: url("../img/ipad.jpg");
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-bottom: 95px;
+}
+}
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main .titles {
+    padding-bottom: 45px;
+}
+.last__developing {
+		padding-bottom: 45px;
+	}
+.latest__project {
+    padding-bottom: 65px;
+}
+.culture {
+    padding-top: 45px;
+    padding-bottom: 40px;
+    background: #f9f9f9;
+}
+@media (min-width: 768px) {
+	.services {
+    padding-top: 100px;
+    padding-bottom: 105px;
+}
+	.main .titles {
+    padding-bottom: 85px;
+}
+	.last__developing {
+		padding-bottom: 95px;
+	}
+	.latest__project {
+    padding-bottom: 125px;
+}
+	.culture {
+    padding-top: 95px;
+    padding-bottom: 90px;
+    background: #f9f9f9;
+}
+	
+}
+.main__title,
+	.relax .picture__content h3,
+	.latest__project .latest__project--title,
+	.culture h2,
+	.clients h2 {
+		font-size: 24px;
+	}
+@media (min-width: 768px) {
+	.main__title,
+	.relax .picture__content h3,
+	.latest__project .latest__project--title,
+	.culture h2,
+	.clients h2  {
+		font-size: 40px;
+	}
 }
